@@ -1,0 +1,107 @@
+/* styles.css */
+
+
+:root {
+    --link-color: #0000ff !important;
+    --font-family: Arial, sans-serif;
+}
+.HN{
+	font-size: 30px;
+	color: black;
+	text-align: center; 
+	font-family: var(--font-family);
+	line-height: 1.5;
+	font-weight: bold; 
+	margin-bottom: 5px;
+}
+
+body{
+	font-size: 16px;
+	background-color: #dddede;
+	color: black; 
+	font-family: var(--font-family);
+	line-height: 1.5;
+	text-decoration: none;
+}
+
+a {
+    color: var(--link-color); 
+	font-family: var(--font-family);
+}
+a:hover {
+   
+    text-decoration: none; 
+}
+
+#NewYearpresents{
+    font-size: 18px;
+    color: #666;
+    text-align: justify;
+    margin-bottom: none;
+}
+ul{
+	list-style-type: square;
+	font-size: 18px;
+	color: black;
+	font-family: var(--font-family);
+	
+}
+ ol{
+	font-size: 16px;
+	color: black;
+	font-family: var(--font-family);
+	 margin-bottom: 10px;
+	 padding-left: 6px:
+ }
+ dl
+ {
+	 font-size: 16px;
+	 color: black;
+	 font-family: var(--font-family);
+	
+ }
+ table
+ {
+	 text-align: center;
+	 border-collapse: collapse;
+	 border: 1;
+	 width: 73%;
+	 font-family: var(--font-family);
+	 font-size: 16px;
+	 margin-bottom: 40px;
+	 margin: 0 auto;
+ }
+ 
+ th{
+	 background-color: #ae8d90;
+	 color: white;
+	 border: 1px solid black;
+	 text-align: center;
+	 font-family: var(--font-family);
+	 font-size: 16px;
+ }
+ td{
+	 background-color: none;
+	 color: black;
+	 font-family: var(--font-family);
+	 font-size: 16px;
+	 border: 2px solid black;
+	 margin-left: auto;
+	 margin-right: auto;
+	 padding-top: 10px;
+     padding-bottom: 10px;
+	 text-align: center;
+ }
+ .frame-container{
+	 
+	 width: 200;
+	 height:200;
+	 position: fixed;
+	 bottom: 0; 
+	 right: 0;
+	 border: 1px solid black;
+	 z-index: 9999;
+	 
+ }
+ 
+ 
