@@ -2,7 +2,7 @@
 
 
 :root {
-    --link-color: #0000ff !important;
+    --link-color: #0000ff;
     --font-family: Arial, sans-serif;
 }
 .HN{
@@ -24,14 +24,8 @@ body{
 	text-decoration: none;
 }
 
-a {
-    color: var(--link-color); 
-	font-family: var(--font-family);
-}
-a:hover {
-   
-    text-decoration: none; 
-}
+
+
 
 #NewYearpresents{
     font-size: 18px;
@@ -47,12 +41,22 @@ ul{
 	
 }
  ol{
+	 
 	font-size: 16px;
 	color: black;
 	font-family: var(--font-family);
 	 margin-bottom: 10px;
 	 padding-left: 6px:
  }
+ .list-container {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    border-color: purple;
+	border-style:dashed;
+	border-width:3px;
+	display: inline-block;
+}
  dl
  {
 	 font-size: 16px;
@@ -104,4 +108,46 @@ ul{
 	 
  }
  
+ i + b {
+      color: #ad3964;
+        }
+
+dl dt {
+        color: #9728d7; 
+		}
+ol > li{
+		color :#4d2975;}
+		
+ span {
+    color: purple;
+    
+}
+a:link, a:visited {
+    color: purple; 
+}
+
+a:active {
+    color: pink; 
+}
+
+a:hover {
+    text-decoration: none; 
+}
+
+#hint {
+	display: flex;
+	float: right; 
+    border: 2px solid purple;
+    padding: 5px;
+    font-size: 13px; 
+    height: 120px;
+    width: 135px;
+	margin: 0; 
+}
+
+
+ dt:before {
+ content: " \2764 "; }
+ dt:after {
+ content: " \2764 "; }
  
