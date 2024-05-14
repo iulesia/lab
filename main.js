@@ -81,11 +81,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function addContentButton() {
     const newParagraph = document.createElement('p');
-    const newText = document.createTextNode('new paragraph');
+    const newText = document.createTextNode('A gift that inspires, motivates, or reminds of something pleasant will always be appreciated more. Remember what a person dreams of?');
     newParagraph.appendChild(newText);
+	newParagraph.classList.add('added-content');
     document.getElementById('name-list').after(newParagraph);
 }
 
 function removeContentButton() {
-    document.getElementById('link-list').remove();
+    const addedContent = document.querySelector('.added-content'); 
+    if (addedContent) {
+        addedContent.remove();
+    } else {
+        alert("No content added to remove.");
+    }
 }
