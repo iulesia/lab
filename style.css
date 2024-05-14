@@ -17,7 +17,7 @@
 
 body{
 	font-size: 16px;
-	background-color: #dddede;
+	background: #dddede;
 	color: black; 
 	font-family: var(--font-family);
 	line-height: 1.5;
@@ -122,14 +122,14 @@ ol > li{
     color: purple;
     
 }
-a:link, a:visited {
-    color: purple; 
-}
+
 
 a:active {
     color: pink; 
 }
-
+a:link, a:visited {
+    color: purple; 
+}
 a:hover {
     text-decoration: none; 
 }
@@ -151,3 +151,12 @@ a:hover {
  dt:after {
  content: " \2764 "; }
  
+ 
+ .btn {
+    font-size: 17px; 
+    padding: 10px 20px; 
+    margin: 5px; 
+    border-radius: 5px; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    cursor: pointer; }

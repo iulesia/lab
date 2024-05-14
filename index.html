@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page author: Yukhymets Lesia</title>
+	<script src="C:/lab.okr/lab/main.js"></script>
 	<link rel="stylesheet" href="./style.css">
 	<style>
 	   
@@ -16,6 +17,14 @@
     
 </head>
 <body>
+   <button class="btn" onclick="addContentButton()">new paragraph</button>
+<button class="btn" onclick="removeContentButton()">remove</button>
+<button class="btn" onclick="compareStringsPrompt()">Compare the lines</button>
+<button class="btn" onclick="changeStyle()">Change Style</button>
+<button class="btn" onclick="redirect()">Gift Selection</button>
+<button class="btn" onclick="changeBackground()">Change background</button>
+<button class="btn" onclick="showDeveloperInfo('Yukhymets', 'Lesia')">information about developer</button>
+
        <div style="position: fixed; bottom: 160px; right: 0; z-index: 9999;">
     <a href="https://uamade.ua/uk/gifts/" target="_blank" style="text-decoration: none; color: black; background-color: #ffffff; padding: 5px 10px; border: 1px solid black; border-radius: 5px;">go to the site</a>
 </div>
@@ -27,9 +36,9 @@
         </font>
     </p>
 	<br>
-	<p> We all love holidays and look forward to them. However, every holiday is preceded by a painful process of choosing a gift. In this article, we will help you choose the best gift</p>
-	<p>Looking for the perfect holiday gifts to spread joy and cheer? Whether you're shopping for family, friends, or colleagues, finding the right present can make the season even more magical. Here are some thoughtful ideas to inspire your holiday shopping</p>
-	<p>No matter what you choose, <i>the most important thing is to spread love</i></p>
+	<p id="string"> We all love holidays and look forward to them. However, every holiday is preceded by a painful process of choosing a gift. In this article, we will help you choose the best gift</p>
+	<p id="name-list">Looking for the perfect holiday gifts to spread joy and cheer? Whether you're shopping for family, friends, or colleagues, finding the right present can make the season even more magical. Here are some thoughtful ideas to inspire your holiday shopping</p>
+	<p id="link-list">No matter what you choose, <i>the most important thing is to spread love</i></p>
 	<br>
 	<p><b>Content:</b></p>
 	<ul type="square">
