@@ -17,6 +17,7 @@
     
 </head>
 <body>
+
    <button class="btn" onclick="addContentButton()">new paragraph</button>
 <button class="btn" onclick="removeContentButton()">remove</button>
 <button class="btn" onclick="compareStringsPrompt()">Compare the lines</button>
@@ -40,6 +41,13 @@
 	<p id="name-list">Looking for the perfect holiday gifts to spread joy and cheer? Whether you're shopping for family, friends, or colleagues, finding the right present can make the season even more magical. Here are some thoughtful ideas to inspire your holiday shopping</p>
 	<p id="link-list">No matter what you choose, <i>the most important thing is to spread love</i></p>
 	<br>
+	<button id="menuButton">Open Menu</button>
+
+<div id="menu" class="menu">
+  <button class="menuButton" data-action="showBirthdayGifts">Birthday gifts</button>
+  <button class="menuButton" data-action="showNewYearGifts">New Year gifts</button>
+  <button class="menuButton" data-action="showValentinesDayGifts">Valentine's Day gifts</button>
+</div>
 	<p><b>Content:</b></p>
 	<ul type="square">
         <li><a href="birthday presents.html">Birthday gifts </a></li>

@@ -6,11 +6,25 @@
     <title>Valentine's day presents</title>
 	<script src="C:/lab.okr/lab/main.js"></script>
 	 <link rel="stylesheet" href="./style.css">
+	<style>
+    .highlight {
+        background-color: pink;
+    }
 	
+</style>
 </head>
 <body>  
+ 
+
     <script src="C:/lab.okr/lab/main.js"></script>
-	<button type="button" onclick="giftDialog()">Choose a gift</button>
+	
+	<button id="myButton" onclick="handleClickAttribute()" type="button" onclick="giftDialog()">Choose a gift</button>
+    <button id="myButtonProperty">Click Me</button>
+	<button id="Button">Click Me</button>
+	<button id="my">Click Me</button>
+    <button id="removeHandler">Remove Handler</button>
+	<button id="counterButton" data-count="0">Click Me (0)</button>
+
     <body style="background-color: #dddede;">
     <h1 style="text-align: center;">Gift Ideas for Valentine's day</h1>
 	<br>
@@ -35,32 +49,51 @@
         </tr>
     </table>
 	<br>
-	<div id="hint">
-<p>Remember to consider interests, preferences, and personality when choosing the perfect Valentine's Day gift.</p>
-</div>
+
 <h3><span>gift ideas for her:</span></h3>
 <div class="list-container">
-    <ol>
+    <ol id="myList">
         <li>A romantic dinner at her favorite restaurant.</li>
         <li>A weekend getaway to a cozy bed and breakfast.</li>
         <li>Personalized jewelry engraved with her initials.</li>
     </ol>
+	
 </div>
 
 
 <br>
 <h3>gift ideas for him:</h3>
-<dl>
-    <dt>Love Coupons:</dt>
-    <dd>Handmade coupons offering special favors or experiences.</dd>
-    
-    <dt>Memory Jar:</dt>
-    <dd>A jar filled with notes recalling cherished memories shared together.</dd>
-    
-    <dt>Star Registry:</dt>
-    <dd>Naming a star after your loved one as a symbol of your eternal love.</dd>
-</dl>
+    <dl class="highlight-on-hover" data-highlight-color="#e5e5ff">
+        <dt>Love Coupons:</dt>
+        <dd>Handmade coupons offering special favors or experiences.</dd>
+        
+        <dt>Memory Jar:</dt>
+        <dd>A jar filled with notes recalling cherished memories shared together.</dd>
+        
+        <dt>Star Registry:</dt>
+        <dd>Naming a star after your loved one as a symbol of your eternal love.</dd>
+    </dl>
+	
 
+<div id="gifts" class="gifts">
+    <div id="giftForHim" class="gift-category">
+        <h2>For Him</h2>
+        <div class="gift" draggable="true">Love Coupons</div>
+        <div class="gift" draggable="true">Memory Jar</div>
+        <div class="gift" draggable="true">Star Registry</div>
+        <div class="gift" draggable="true">Gadget Accessories</div>
+        <div class="gift" draggable="true">Personalized Wallet</div>
+    </div>
+
+    <div id="giftForHer" class="gift-category">
+        <h2>For Her</h2>
+        <div class="gift" draggable="true">Romantic Dinner</div>
+        <div class="gift" draggable="true">Weekend Getaway</div>
+        <div class="gift" draggable="true">Personalized Jewelry</div>
+        <div class="gift" draggable="true">Spa Day Voucher</div>
+        <div class="gift" draggable="true">Love Letter in a Bottle</div>
+    </div>
+</div>
 </body>
 </html>
 
